@@ -6,6 +6,19 @@
     <title>Legal solution webpage</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+ <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'back': '#B68C5A',
+              }
+            }
+          }
+        }
+      </script>
+
 <!-- google font -->
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,7 +76,7 @@
 
 <main class="container mx-auto">
   <!-- banner section start -->
-   <section class="mx-auto my-10">
+   <section class=" my-10">
     <div>
       <div
   class="hero min-h-screen "
@@ -86,7 +99,7 @@
     </div>
    </section>
    <!-- legal practice area -->
-    <section class="mx-auto text-center my-10">
+    <section class="text-center my-10">
       <h1 class="font-extrabold font-garamond text-4xl text-[#414040] mb-4">The Legal Practice Area</h1>
       <p>There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
     <div class="my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -183,6 +196,58 @@
 </div>
     </div>
     </section>
+    <!-- slider section -->
+     <section class="my-10 text-center">
+      <h1 class="font-garamond font-extrabold text-4xl text-[#414040] mb-4">What Our Client Say</h1>
+      <p class="mb-12">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+      <div class="relative">
+        <div class="carousel ">
+          
+        <!-- first slide -->
+  <div id="slide1" class="carousel-item relative w-full lg:opacity-75">
+    <img
+      src="images/slider-1.jpg"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide3" class="btn btn-circle">❮</a>
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+    
+  </div>
+  <!-- second slide -->
+  <div id="slide2" class="carousel-item relative w-full">
+    <img
+      src="images/slider-2.jpg"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide1" class="btn btn-circle">❮</a>
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <!-- third Slide -->
+  <div id="slide3" class="carousel-item relative w-full">
+    <img
+      src="images/slider-3.jpg"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide2" class="btn btn-circle">❮</a>
+      <a href="#slide1" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+
+  </div>
+  <div class="lg:absolute top-1/4 left-45 ">
+    <div class="text-white items-center w-[900px] flex flex-col  p-4">
+   <img class="mb-6" src="images/client.png" alt="">
+   <div class="">
+    <h1 class="mb-2">Awlad Hossain</h1>
+   <p class="mb-6">UIX Designer</p>
+   <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+   </div>
+ </div>
+  </div>
+      </div>
+     </section>
 </main>
 </body>
 </html>
